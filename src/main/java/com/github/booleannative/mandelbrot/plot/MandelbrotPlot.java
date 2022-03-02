@@ -43,6 +43,7 @@ public class MandelbrotPlot {
 
     public MandelbrotPlot() {
         JFrame mandelFrame = new JFrame();
+        mandelFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         mandelbrotPanel.setPreferredSize(new Dimension(750, 500));
         mandelFrame.add(mandelbrotPanel);
         mandelFrame.pack();
